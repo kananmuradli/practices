@@ -18,6 +18,12 @@ public class ValidPerfectSquare {
      */
 
     public static boolean mySqrt(int x){
+        if (x == 0){
+            return true;
+        }
+        if (x == 1){
+            return true;
+        }
         return calculateRoot(x, 1, 0);
     }
 
@@ -33,7 +39,7 @@ public class ValidPerfectSquare {
     }
 
     public static void main(String[] args) {
-        System.out.println(mySqrt(4));
-        System.out.println(mySqrt(5));
+        System.out.println(mySqrt(0));
+        System.out.println(mySqrt(1));
     }
 }
