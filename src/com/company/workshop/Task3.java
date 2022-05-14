@@ -1,6 +1,11 @@
 package com.company.workshop;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Task3 {
@@ -26,7 +31,6 @@ public class Task3 {
      * 1) Each array consists of distinct hotel IDs
      * 2) Each array may contain duplicate hotel IDs
      *
-     * @return
      */
 
 
