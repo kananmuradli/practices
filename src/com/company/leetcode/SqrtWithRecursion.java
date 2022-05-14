@@ -32,13 +32,16 @@ public class SqrtWithRecursion {
 
     public static int calculateRoot(int x, int y, int count) {
         int z = x - y;
-        if (z <= 0) {
+        if (z == 0) {
             return count + 1;
+        }
+        if (z < 0){
+            return count;
         }
         return calculateRoot(z, y + 2, count + 1);
     }
 
     public static void main(String[] args) {
-        System.out.println(mySqrt(5));
+        System.out.println(mySqrt(8));
     }
 }
