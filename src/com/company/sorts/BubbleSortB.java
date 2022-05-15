@@ -24,7 +24,8 @@ public class BubbleSortB {
     }
 
     public static void main(String[] args) {
-        int[] array = {-40, -5, -1, 4, 10, 11, 15, 20, 30};
+        int[] array = {4, -1, 30, 11, -40, 15, 20, 10, -5};
+        System.out.println(Arrays.toString(array));
         bubbleSort(array);
         System.out.println(array.length);
         System.out.println(Arrays.toString(array));
