@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class SelectionSort {
 
-    public static void selectionSort(int[]array){
-        for (int lastUnSortedIndex = array.length - 1; lastUnSortedIndex > 0; lastUnSortedIndex--){
+    public static void selectionSort(int[] array) {
+        for (int lastUnSortedIndex = array.length - 1; lastUnSortedIndex > 0; lastUnSortedIndex--) {
             int largestIndex = 0;
-            for (int i = 1; i <= lastUnSortedIndex; i++){
-                if (array[i] > array[largestIndex]){
+            for (int i = 1; i <= lastUnSortedIndex; i++) {
+                if (array[i] > array[largestIndex]) {
                     largestIndex = i;
                 }
             }
@@ -16,8 +16,8 @@ public class SelectionSort {
         }
     }
 
-    public static void swap(int[]array, int i, int j){
-        if (i == j){
+    public static void swap(int[] array, int i, int j) {
+        if (i == j) {
             return;
         }
 
@@ -27,7 +27,7 @@ public class SelectionSort {
     }
 
     public static void main(String[] args) {
-        int [] array = {4, -1, 30, 11, -40, 15, 20, 10, -5};
+        int[] array = {4, -1, 30, 11, -40, 15, 20, 10, -5};
         System.out.println(Arrays.toString(array));
         selectionSort(array);
         System.out.println(array.length);
