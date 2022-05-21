@@ -1,4 +1,4 @@
-package com.company.chapter1;
+package com.company.arrays;
 
 import java.util.Arrays;
 import java.util.Collections;

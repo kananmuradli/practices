@@ -1,4 +1,4 @@
-package com.company.chapter1;
+package com.company.arrays;
 
 public class PushZero {
 
