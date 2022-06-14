@@ -1,14 +1,15 @@
 package com.company.leetcode;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ReverseString {
 
     public static void main(String[] args) {
-//        reverseStringFirstWay();
-//        reverseStringSecondWay();
-//        reverseStringThirdWay();
-//        reverseStringFourthWay();
+        reverseStringFirstWay();
+        reverseStringSecondWay();
+        reverseStringThirdWay();
+        reverseStringFourthWay();
     }
 
     private static void reverseStringFirstWay() {
@@ -44,6 +45,7 @@ public class ReverseString {
         for (int i = ch.length-1; i>=0; i--){
             System.out.print(ch[i]);
         }
+        System.out.println();
     }
 
     private static void reverseStringFourthWay(){
