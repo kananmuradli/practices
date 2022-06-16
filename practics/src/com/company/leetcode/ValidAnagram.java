@@ -8,11 +8,11 @@ public class ValidAnagram {
         if (s.length() != t.length())
             return false;
 
-        int[] store = new int[26];
+        int[] store = new int[100];
 
         for (int i = 0; i < s.length(); i++) {
-            store[s.charAt(i) - 'a']++;
-            store[t.charAt(i) - 'a']--;
+            store[s.charAt(i) - 'A']++;
+            store[t.charAt(i) - 'A']--;
         }
 
         for (int n : store)
