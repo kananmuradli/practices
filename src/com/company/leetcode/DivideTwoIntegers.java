@@ -44,9 +44,11 @@ public class DivideTwoIntegers {
         if (dividend1 == divisor1) return 1;
         if (divisor1 == 1) return dividend1;
         if (divisor1 == -1) return -dividend1;
+
         int sign1 = (dividend1 < 0 && divisor1 > 0) || (dividend1 > 0 && divisor1 < 0) ? -1 : 1;
         dividend1 = Math.abs(dividend1);
         divisor1 = Math.abs(divisor1);
+        if (dividend1 == divisor1) return -1;
 
         int result1 = 0;
         for (int i = 0; (dividend1 - divisor1) >= 0; i++) {
