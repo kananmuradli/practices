@@ -1,4 +1,4 @@
-package com.company.leetcode;
+package com.company.leetcode.two_sum;
 
 //    Input: nums = [2,7,11,15], target = 9
 //    Output: [0,1]

@@ -1,4 +1,4 @@
-package com.company.leetcode;
+package com.company.leetcode.add_two_numbers;
 
 public class AddTwoNumbers {
 
@@ -44,14 +44,5 @@ public class AddTwoNumbers {
       curr = curr.next;
     }
     return dummy.next;
-  }
-}
-
-class ListNode {
-  public int val;
-  public ListNode next;
-
-  public ListNode(int val) {
-    this.val = val;
   }
 }
