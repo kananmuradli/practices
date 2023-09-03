@@ -10,7 +10,7 @@ public class Interesting {
       }
 
       if (number < 0 || number > 999) {
-        return "N/A"; // Handle out of range numbers or negative numbers as needed.
+        throw new IllegalArgumentException("Number is out of range");
       }
 
       String result = "";
