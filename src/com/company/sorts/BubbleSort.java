@@ -7,7 +7,7 @@ public class BubbleSort {
 //  BubbleSort Algorithm
     public static void main(String[] args) {
         int[] array = {3, 4, 6, 1, 2, 5};
-        print(Arrays.toString(array));
+        print(array);
         for (int i = 0, size = array.length; i < size - 1; i++) {
             for (int j = 0; j < size - 1 - i; j++) {
                 if (array[j] > array[j + 1]) {
@@ -17,10 +17,10 @@ public class BubbleSort {
                 }
             }
         }
-        print(Arrays.toString(array));
+        print(array);
     }
 
-    private static void print(String s) {
-        System.out.println(s);
+    private static void print(int [] arr) {
+        System.out.println(Arrays.toString(arr));
     }
 }

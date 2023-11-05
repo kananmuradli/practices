@@ -34,10 +34,12 @@ public class MyEnumLikeClass {
   public static void main(String[] args) {
     MyEnumLikeClass myValue = MyEnumLikeClass.VALUE1;
     System.out.println(myValue.getName());
+    System.out.println();
 
     for (MyEnumLikeClass value : MyEnumLikeClass.values()) {
       System.out.println(value.getName());
     }
+    System.out.println();
 
     MyEnumLikeClass parsedValue = MyEnumLikeClass.valueOf("Value 2");
     System.out.println(parsedValue.getName());
