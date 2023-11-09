@@ -24,7 +24,7 @@ public class TheQueue {
             queueArray[rear] = input;
             rear++;
             numberOfItems++;
-            System.out.println("INSERT " + input + " Was Added to the Stack\n");
+            System.out.println("INSERT " + input + " Was Added to the Queue\n");
         } else {
             System.out.println("Sorry But the Queue is Full");
         }
@@ -72,9 +72,9 @@ public class TheQueue {
         theQueue.priorityInsert("25");
         theQueue.priorityInsert("10");
 
-        theQueue.remove();
-        theQueue.remove();
-        theQueue.peek();
+//        theQueue.remove();
+//        theQueue.remove();
+//        theQueue.peek();
 
 		/*
 		theQueue.insert("10");
