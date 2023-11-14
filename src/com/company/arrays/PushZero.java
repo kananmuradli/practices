@@ -11,8 +11,10 @@ public class PushZero {
                 arr[count] = arr[i];
                 count++;
             }
-        while (count < n)
-            arr[count++] = 0;
+        while (count < n){
+            arr[count] = 0;
+            count++;
+        }
         for (int i = 0; i < n; i++)
             System.out.print(arr[i] + " ");
     }
