@@ -7,13 +7,19 @@ public class MaxCountElement {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 2, 4};
-        findMaxCountElement(arr);
+
+        findMaxCountElement(arr).forEach((element, count) ->
+                System.out.println("Element : " + element + " count : " + count));
+
+        for (var entries : findMaxCountElement(arr).entrySet()) {
+            System.out.println("Element : " + entries.getKey() + " and count : " + entries.getValue());
+        }
     }
 
-    public static void findMaxCountElement(int[] arr) {
+    public static Map<Integer, Integer> findMaxCountElement(int[] arr) {
         if (arr == null || arr.length == 0) {
             System.out.println("array is empty");
-            return;
+            return new HashMap<>();
         }
         Map<Integer, Integer> elementsMap = new HashMap<>();
         for (int element : arr) {
@@ -29,6 +35,11 @@ public class MaxCountElement {
                 maxElement = entry.getKey();
             }
         }
-        System.out.println("Max used element is : " + maxElement + " and used " + maxCount + " times");
+
+        var maxMaps = new HashMap<Integer, Integer>();
+        maxMaps.put(maxElement, maxCount);
+
+        return maxMaps;
+
     }
 }
