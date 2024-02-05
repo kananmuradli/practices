@@ -6,7 +6,6 @@ Writing Java code for checking word is anagram
 -> input race,care -> output true
 input -> test, code -> output false
  */
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
