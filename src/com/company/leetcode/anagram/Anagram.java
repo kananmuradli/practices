@@ -84,8 +84,3 @@ public class Anagram {
         return '*';
     }
 }
-
-/*
-Write Java code for finding numbers of maximum element in array -> input [4,1,5,5,1,5] -> output 3
-Write Java code for finding factorial of number -> input 3 -> 6
-*/
