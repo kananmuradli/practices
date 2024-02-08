@@ -14,11 +14,11 @@ public class DataProcessor {
         );
 
         List<Payment> payments = List.of(
-                new Payment("209OPEX180220564", 1, "209MCGT180220051", 3519.59),
-                new Payment("209OPEX180230510", 1, "209MCGT180230001", 8569.66),
-                new Payment("209OPEX181111111", 1, "209MCGT180111111", 1000),
-                new Payment("209OPEX180240567", 2, "209MCGT180240002", 9876.54),
-                new Payment("209OPEX182222222", 2, "209MCGT180222222", 1000)
+                new Payment("209180220564", 1, "209180220051", 3519.59),
+                new Payment("209180230510", 1, "209180230001", 8569.66),
+                new Payment("209181111111", 1, "209180111111", 1000),
+                new Payment("209180240567", 2, "209180240002", 9876.54),
+                new Payment("209182222222", 2, "209180222222", 1000)
         );
 
         Map<Integer, List<Payment>> paymentsByItemId = payments.stream()
